@@ -60,7 +60,7 @@ def extract_commit_urls_from_profiles(candidates):
 
 def get_emails_from_commit_urls(candidates):
     for candidate in candidates:
-        commit_url = candidate[3]
+        commit_url = candidate[4]
 
         if commit_url:
             patch_link = commit_url + '.patch'
